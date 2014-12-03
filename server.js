@@ -11,7 +11,7 @@ if (typeof ip === 'undefined') {
 var server = http.createServer(function(req, res) {
 
 	res.writeHead(200);
-	res.end('Hello HTTP');
+	res.end(new Date() + ' - Hello HTTP');
 });
 
 server.listen(port, ip);
